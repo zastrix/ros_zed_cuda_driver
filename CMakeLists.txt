@@ -49,11 +49,11 @@ endif(COMMAND cmake_policy)
 SET(LINUX_ONLY_LIBRARIES "")
 
 SET(ZED_DIR "/usr/local/zed/")
-find_package(ZED 1.0 REQUIRED)
+find_package(ZED REQUIRED)
 #find_package(GLUT)
 SET(LINUX_ONLY_LIBRARIES pthread npps nppi)
 
-find_package(CUDA 6.5 EXACT REQUIRED)
+find_package(CUDA REQUIRED)
 #find_package(OpenGL)
 
 include_directories(${ZED_INCLUDE_DIRS})
